@@ -1,0 +1,173 @@
+name: Bug Report / Feature Request
+description: Report a bug or request a new feature for eventools.io
+title: "[Issue]: "
+labels: ["needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to eventools.io! Please fill out this form to report a bug or request a feature.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: What type of issue are you submitting?
+      options:
+        - Bug Report
+        - Feature Request
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform does this relate to?
+      description: Select the eventools.io platform this issue relates to.
+      options:
+        - eventools (eventools.io) - Main Hub
+        - showtools (show.eventools.io) - Live Show Execution
+        - prodtools (prod.eventools.io) - Production Documentation
+        - soundtools (sound.eventools.io) - Audio Engineering
+        - vidtools (video.eventools.io) - Video Production
+        - lightools (light.eventools.io) - Lighting Design
+        - budgetools (budget.eventools.io) - Financial Management
+        - inventorytools (coming soon) - Equipment & Asset Management
+        - labortools (coming soon) - Professional Marketplace & Crew Scheduling
+        - Multiple platforms
+        - New platform idea
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        **For bugs**: Describe what's broken and what you expected to happen.
+        **For features**: Describe the feature you'd like and what problem it solves.
+      placeholder: Describe the issue or feature...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-or-use-case
+    attributes:
+      label: Steps to Reproduce (for bugs) OR Use Case (for features)
+      description: |
+        **For bugs**: List the specific steps to reproduce the issue.
+        **For features**: Explain the use case and how this would improve your workflow.
+      placeholder: |
+        For bugs:
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+
+        For features:
+        - What are you trying to accomplish?
+        - What's the current workaround?
+        - How would this help?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority / Severity
+      description: |
+        **For bugs**: How severely does this impact your workflow?
+        **For features**: How important is this to you?
+      options:
+        - Critical - Cannot use the platform / Absolutely need this feature
+        - High - Major impact / Would significantly improve workflow
+        - Medium - Moderate impact / Nice to have
+        - Low - Minor inconvenience / Small enhancement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: account-tier
+    attributes:
+      label: Account Tier (optional)
+      description: Which subscription plan are you using?
+      options:
+        - Free Trial
+        - Starter ($10/month)
+        - Entry ($20/month)
+        - Pro ($30/month)
+        - Full Suite ($50/month)
+        - Enterprise ($100/month)
+        - Not subscribed yet
+        - Prefer not to say
+    validations:
+      required: false
+
+  - type: dropdown
+    id: target-audience
+    attributes:
+      label: Who would benefit? (optional, mainly for features)
+      description: Select who would use this feature or is affected by this bug.
+      multiple: true
+      options:
+        - Freelance Production Professionals
+        - Small Production Teams (2-10 people)
+        - Mid-to-Large Agencies (10-100+ people)
+        - Show Callers / Technical Directors
+        - Audio Engineers
+        - Video Engineers
+        - Lighting Designers
+        - Production Managers
+        - Event Producers
+        - AV Technicians
+        - All users
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment (for bugs)
+      description: |
+        **For bugs only**: Please provide your browser, OS, and device information.
+        Examples: "Chrome 120 on macOS Sonoma, MacBook Pro" or "Safari on iPad Pro"
+      placeholder: Browser, OS, device...
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Mockups / Error Messages
+      description: |
+        Add screenshots, mockups, console errors, or any visual aids.
+        You can drag and drop images directly into this text area.
+      placeholder: Paste or drag images here...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: |
+        Any other relevant information:
+        - For bugs: Console errors, network logs, workarounds tried
+        - For features: Examples from other tools, proposed solutions, alternatives considered
+        - General: Timeline, urgency, willingness to beta test
+      placeholder: Any additional information...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Acknowledgment
+      description: Please confirm the following before submitting.
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I understand this is a public repository and will not share sensitive information
+          required: true
+        - label: I am willing to provide additional details if the eventools.io team has questions
+          required: false

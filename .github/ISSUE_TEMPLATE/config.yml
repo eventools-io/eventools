@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Vulnerability
+    url: mailto:security@eventools.io
+    about: Please report security vulnerabilities privately via email to security@eventools.io
+  - name: General Support
+    url: mailto:support@eventools.io
+    about: For account issues, billing questions, or general support, email our support team
+  - name: eventools.io Website
+    url: https://eventools.io
+    about: Visit our website to learn more about eventools.io or start your free trial
+  - name: Documentation
+    url: https://eventools.io
+    about: View our documentation and help guides (coming soon)
