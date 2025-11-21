@@ -89,7 +89,6 @@ State-of-the-art teleprompter with advanced AI features:
 - **Speech-to-text transcription** using Deepgram Nova-3 (industry-leading accuracy)
 - **Voice-tracked auto-scrolling** that matches speaker pace
 - **Script deviation detection** highlights when speakers go off-script
-- **Real-time transcription display** shows exactly what's being said
 - **Chroma key support** for green screen integration
 - **High-quality audio** capture with Opus codec at 48kHz
 
