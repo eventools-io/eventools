@@ -20,22 +20,21 @@ body:
       required: true
 
   - type: dropdown
-    id: platform
+    id: feature-area
     attributes:
-      label: Which platform does this relate to?
-      description: Select the eventools.io platform this issue relates to.
+      label: Which feature area does this relate to?
+      description: Select the feature area this issue relates to.
       options:
-        - eventools (eventools.io) - Main Hub
-        - showtools (show.eventools.io) - Live Show Execution
-        - prodtools (prod.eventools.io) - Production Documentation
-        - soundtools (sound.eventools.io) - Audio Engineering
-        - vidtools (video.eventools.io) - Video Production
-        - lightools (light.eventools.io) - Lighting Design
-        - budgetools (budget.eventools.io) - Financial Management
-        - inventorytools (coming soon) - Equipment & Asset Management
-        - labortools (coming soon) - Professional Marketplace & Crew Scheduling
-        - Multiple platforms
-        - New platform idea
+        - showtools - Live Show Execution
+        - prodtools - Production Documentation (planned)
+        - soundtools - Audio Engineering (planned)
+        - vidtools - Video Production (planned)
+        - lightools - Lighting Design (planned)
+        - budgetools - Financial Management (planned)
+        - inventorytools - Equipment Management (planned)
+        - labortools - Crew Scheduling (planned)
+        - Account / Authentication
+        - General Platform
         - Not sure
     validations:
       required: true
@@ -93,11 +92,11 @@ body:
       description: Which subscription plan are you using?
       options:
         - Free Trial
-        - Starter ($10/month)
-        - Entry ($20/month)
-        - Pro ($30/month)
-        - Full Suite ($50/month)
-        - Enterprise ($100/month)
+        - Starter
+        - Entry
+        - Pro
+        - Full Suite
+        - Enterprise
         - Not subscribed yet
         - Prefer not to say
     validations:
